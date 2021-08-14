@@ -1,0 +1,28 @@
+{
+  "name": "single-projects-for-portfolio",
+  "version": "1.0.0",
+  "description": "**Tier:** 1-Beginner",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JSouza27/single-projects-for-portfolio.git"
+  },
+  "author": "Jonathan de Souza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JSouza27/single-projects-for-portfolio/issues"
+  },
+  "homepage": "https://github.com/JSouza27/single-projects-for-portfolio#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "jest": "^27.0.6",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0"
+  },
+  "dependencies": {
+    "eslint-config-trybe-fundamentals": "^1.1.1"
+  }
+}
