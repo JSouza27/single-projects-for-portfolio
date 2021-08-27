@@ -4,22 +4,35 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./SCSS/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap" rel="stylesheet">
   <script defer src="script.js"></script>
   <title>Bin2Dec</title>
 </head>
 <body>
   <section class="main">
-    <div class="input">
-      <input class="input-bin" type="text" maxlength="9" />
-      <label>Insira um valor</label>
-      <span class="error"></span>
-    </div>
-
-    <button class="btn-convert">Converter</button>
-
-    <div>
-      <span class="result">0.00</span>
-    </div>
+    <section id="test" class="container">
+      <div class="input-content">
+        <label class="label" for="input-id">Insira um valor binário</label>
+        <div class="div-input">
+          <input id="input-id" class="input-bin" type="text" maxlength="9" />
+        </div>
+        <div class="error-content">
+          <span class="error"></span>
+        </div>
+      </div>
+      <div class="btn-content">
+        <button class="btn-convert">Converter</button>
+      </div>
+      <div>
+        <span class="result">0.0</span>
+      </div>
+    </section>
   </section>
 </body>
 </html>

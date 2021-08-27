@@ -1,0 +1,161 @@
+$background-color: #f1f1f1;
+$text-color: #333;
+$text-input: #2c2c2c;
+$text-font: 'Roboto', sans-serif;
+
+@mixin border-radius() {
+  border-radius: 40px;
+}
+
+@mixin flex-alignment() {
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: $background-color;
+  box-sizing: border-box;
+  color: $text-color;
+  font-family: $text-font;
+  font-size: 1rem;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.main {
+  @include flex-alignment();
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  @include border-radius();
+  @include flex-alignment();
+
+  // box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.3),
+  // 5px 5px 5px rgba(0, 0, 0, 0.2),
+  // 15px 15px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: 
+  -10px -10px 15px rgba(255, 255, 255, 0.5),
+  10px 10px 15px rgba(70, 70, 70, 0.12);
+  display: flex;
+  height: 20.5rem;
+  flex-direction: column;
+  width: 20.5rem;
+}
+
+.result {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 5rem;
+  margin: 1rem;
+}
+
+.input-content {
+  @include flex-alignment();
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  label {
+    font-size: 1.3rem;
+  }
+
+  .input-bin {
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    color: $text-input;
+    font-size: 1.3rem;
+    height: 2rem;
+    outline: none;
+    padding: 0.8rem;
+    width: 15.4rem;
+  }
+  
+  .div-input {
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    height: 3.5rem;
+    justify-content: center;
+    margin: 1rem;
+    position: relative;
+    width: 17rem;
+  
+    &.input-invalid{
+      border-color: #dc3545;    
+
+      &::after {
+        background: url('../images/invalid.png');
+        background-size: cover;
+        content: ' ';
+        display: block;
+        height: 1.5rem;
+        position: absolute;
+        right: 10px;
+        width: 1.5rem;
+      }
+    }
+    
+    &.input-valid{
+      border-color: #198754;
+  
+      &::after {
+        background: url('../images/valid.png');
+        background-size: cover;
+        content: ' ';
+        display: block;
+        height: 1.5rem;
+        position: absolute;
+        right: 10px;
+        width: 1.5rem;
+      }
+    }
+  }
+}
+
+.error-content {
+  @include flex-alignment();
+
+  display: flex;
+  height: 1.5rem;
+  width: 100%;
+
+  .error {
+    font-size: 0.87rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .valid {
+    color: #198754;
+  }
+  
+  .invalid {
+    color: #dc3545;
+  }
+}
+
+.btn-content {
+  position: relative;
+
+  button {
+    background-color: #111;
+    border: 2px solid #111;
+    border-radius: 2px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    height: 2.7rem;
+    outline: none;
+    transition: background-color 1s ease-in-out;
+    width: 9rem;
+  }
+
+}
