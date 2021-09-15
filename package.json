@@ -6,9 +6,14 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "draft-js": "^0.11.7",
+    "eslint-config-trybe-frontend": "^1.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "slate": "^0.65.3",
+    "slate-react": "^0.65.3",
+    "sonarjs": "^1.0.0",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -20,7 +25,8 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "trybe-frontend"
     ]
   },
   "browserslist": {
@@ -34,5 +40,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-trybe-frontend": "^1.2.1",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-sonarjs": "^0.10.0"
   }
 }
