@@ -1,9 +1,11 @@
 import React from 'react';
-import MyEditor from './components/MyEditor';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import MyEditor from './components/Editor/MyEditor';
 
 function App() {
   return (
     <section>
+      <CssBaseline />
       <MyEditor />
     </section>
   );
